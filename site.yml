@@ -1,0 +1,21 @@
+---
+
+- name: CCA | Kernel parameters | Foreman Lab
+  gather_facts: no
+  hosts: all
+
+
+  pre_tasks:
+   - setup:
+       gather_subset: min
+
+  tasks:
+
+    - include_vars: kernel_parameters.yml
+
+    - name: Pass variables to role
+      include_role:
+        name: cca-so-config-kernel-parameters
+      vars:
+        kernel_values: "{{kernel_parameters}}"
+...

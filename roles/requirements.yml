@@ -1,0 +1,10 @@
+---    
+- src: https://github.com/vgespinoza/cca-so-config-kernel-parameters.git 
+  scm: git
+  version: master
+  name: cca-so-config-kernel-parameters
+
+- src: https://github.com/vgespinoza/cca-all-send-metrics.git
+  scm: git
+  version: master
+  name: cca-all-send-metrics

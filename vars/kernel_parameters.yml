@@ -1,0 +1,6 @@
+---
+# vars file for cca-so-config-kernel-parameters
+
+kernel_parameters:
+  - {param: "vm.swappiness", value: 20, enforce: true}
+  - {param: "vm.dirty_ratio", value: 30, enforce: true}
