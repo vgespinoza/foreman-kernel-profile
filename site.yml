@@ -16,6 +16,6 @@
     - name: Pass variables to role
       include_role:
         name: cca-so-config-kernel-parameters
-      vars:
-        kernel_values: "{{kernel_parameters}}"
+#      vars:
+#        kernel_values: "{{kernel_parameters}}"
 ...
